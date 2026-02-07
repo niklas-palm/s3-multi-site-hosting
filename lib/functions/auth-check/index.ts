@@ -210,7 +210,41 @@ export async function handler(event: CloudFrontRequestEvent): Promise<CloudFront
       headers: {
         'content-type': [{ key: 'Content-Type', value: 'text/html' }],
       },
-      body: '<html><body><h1>500 - Configuration Error</h1></body></html>',
+      body: `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - Service Error</title>
+    <style>
+        body {
+            font-family: Baskerville, 'Palatino Linotype', Georgia, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: linear-gradient(145deg, #0d1f0d 0%, #1a3a1a 50%, #0f2810 100%);
+            color: #c9b896;
+        }
+        .container { text-align: center; padding: 3rem; max-width: 480px; }
+        .ornament { color: #d4af37; font-size: 1.5rem; letter-spacing: 0.5em; margin-bottom: 1rem; }
+        h1 { font-size: 7rem; margin: 0; color: #d4af37; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); font-weight: normal; letter-spacing: 0.15em; }
+        .message { font-size: 1.4rem; margin: 1.5rem 0 0.5rem; font-style: italic; letter-spacing: 0.05em; }
+        .divider { width: 60px; height: 1px; background: #d4af37; margin: 2rem auto; opacity: 0.5; }
+        .subtext { font-size: 1rem; opacity: 0.7; margin-top: 2rem; line-height: 1.9; letter-spacing: 0.03em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ornament">&#8226; &#8226; &#8226;</div>
+        <h1>500</h1>
+        <p class="message">Most unfortunate, indeed.</p>
+        <div class="divider"></div>
+        <p class="subtext">The service has encountered a spot of bother.<br>Do try again in a moment.</p>
+    </div>
+</body>
+</html>`,
     };
   }
 

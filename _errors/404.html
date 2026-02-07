@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Site Not Found</title>
+    <title>404 - Not Found</title>
     <style>
         body {
-            font-family: Georgia, 'Times New Roman', serif;
+            font-family: Baskerville, 'Palatino Linotype', Georgia, serif;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -15,34 +15,57 @@
             background: linear-gradient(145deg, #0d1f0d 0%, #1a3a1a 50%, #0f2810 100%);
             color: #c9b896;
         }
-        .container { text-align: center; padding: 2rem; }
+        .container {
+            text-align: center;
+            padding: 3rem;
+            max-width: 480px;
+        }
+        .ornament {
+            color: #d4af37;
+            font-size: 1.5rem;
+            letter-spacing: 0.5em;
+            margin-bottom: 1rem;
+        }
         h1 {
-            font-size: 8rem;
+            font-size: 7rem;
             margin: 0;
             color: #d4af37;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
             font-weight: normal;
-            letter-spacing: 0.2em;
+            letter-spacing: 0.15em;
         }
         .message {
-            font-size: 1.5rem;
-            margin: 1rem 0;
+            font-size: 1.4rem;
+            margin: 1.5rem 0 0.5rem;
             font-style: italic;
+            letter-spacing: 0.05em;
         }
-        .joke {
-            font-size: 1.1rem;
-            opacity: 0.8;
+        .subtext {
+            font-size: 1rem;
+            opacity: 0.7;
             margin-top: 2rem;
-            line-height: 1.8;
+            line-height: 1.9;
+            letter-spacing: 0.03em;
+        }
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: #d4af37;
+            margin: 2rem auto;
+            opacity: 0.5;
         }
     </style>
 </head>
 <body>
     <div class="container">
+        <div class="ornament">&#8226; &#8226; &#8226;</div>
         <h1>404</h1>
-        <p class="message">This site doesn't exist... yet.</p>
-        <p class="joke">Perhaps it's still being deployed?<br>
-        Or you've discovered uncharted territory.</p>
+        <p class="message">Frightfully sorry, old chap.</p>
+        <div class="divider"></div>
+        <p class="subtext">
+            The page you seek appears to have wandered off.<br>
+            Do check the address, or perhaps try again later.
+        </p>
     </div>
 </body>
 </html>
