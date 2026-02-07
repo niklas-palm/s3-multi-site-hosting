@@ -1,0 +1,12 @@
+{
+  "name": "auth-check",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "jose": "^5.2.0",
+    "@aws-sdk/client-ssm": "^3.500.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.131"
+  }
+}
