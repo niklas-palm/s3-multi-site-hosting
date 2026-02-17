@@ -12,6 +12,8 @@ docs.yourdomain.com   ──┘                      ├── myapp/
 
 Upload files to `s3://bucket/myapp/` and `https://myapp.yourdomain.com` works automatically.
 
+**Live Demo:** [s3demo.enpalm.se](https://s3demo.enpalm.se) — built and deployed using Claude Code with the included AI skill.
+
 ## Features
 
 - **Wildcard subdomains** — any `*.yourdomain.com` routes to matching S3 prefix
