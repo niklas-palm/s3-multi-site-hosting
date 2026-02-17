@@ -1,5 +1,5 @@
 {
-  "name": "hosting-nipalm",
+  "name": "s3-multi-hosting",
   "version": "1.0.0",
   "bin": {
     "hosting": "bin/hosting.js"
@@ -13,14 +13,13 @@
     "diff": "cdk diff"
   },
   "devDependencies": {
-    "@types/aws-lambda": "^8.10.160",
     "@types/node": "^20.11.0",
     "aws-cdk": "^2.175.0",
-    "esbuild": "^0.27.2",
     "typescript": "~5.4.0"
   },
   "dependencies": {
     "aws-cdk-lib": "^2.175.0",
-    "constructs": "^10.0.0"
+    "constructs": "^10.0.0",
+    "dotenv": "^17.3.1"
   }
 }
