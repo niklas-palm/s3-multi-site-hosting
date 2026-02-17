@@ -3,4 +3,4 @@ dist/
 cdk.out/
 *.js
 *.d.ts
-!lib/functions/*.js
+.env
